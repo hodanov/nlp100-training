@@ -3,15 +3,17 @@ import sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 
-def getOddChar(word):
+def join(x, y):
+    joined_word = ''
     i = 0
-    odd_chars = ''
-    for char in word:
+    for i in range(4):
+        joined_word += x[i]
+        joined_word += y[i]
         i += 1
-        if i % 2 == 1:
-            odd_chars += char
-    return odd_chars
+        print(i)
+    return joined_word
 
 
-word = 'パタトクカシー'
-print(getOddChar(word))
+word1 = 'パトカー'
+word2 = 'タクシー'
+print(join(word1, word2))

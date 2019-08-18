@@ -1,19 +1,12 @@
-import io
-import sys
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+import re
 
 
-def join(x, y):
-    joined_word = ''
-    i = 0
-    for i in range(4):
-        joined_word += x[i]
-        joined_word += y[i]
-        i += 1
-        print(i)
-    return joined_word
+def split_words(words):
+    words = re.split(' |\\.', words)
+    return words
 
 
-word1 = 'パトカー'
-word2 = 'タクシー'
-print(join(word1, word2))
+words = 'Now I need a drink,' \
+        'alcoholic of course,' \
+        'after the heavy lectures involving quantum mechanics.'
+print(split_words(words))
