@@ -1,4 +1,4 @@
-def n_gram(words, n):
+def n_gram(words: str, n: int) -> []:
     """
     与えられたシーケンス（文字列やリストなど）からn-gramを作成
     """

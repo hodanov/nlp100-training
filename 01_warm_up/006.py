@@ -4,7 +4,7 @@
 """
 
 
-def n_gram(words, n):
+def n_gram(words: str, n: int) -> []:
     n_gram = []
     for i in range(len(words) - n + 1):
         n_gram.append(words[i:i + n])

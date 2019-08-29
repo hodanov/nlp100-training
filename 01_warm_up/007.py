@@ -1,4 +1,4 @@
-def gen_sentence(x, y, z):
+def gen_sentence(x: int, y: str, z: int) -> str:
     """
     引数x, y, zを受け取り「x時のyはz」という文字列を返す関数を実装
     """

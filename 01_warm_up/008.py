@@ -7,7 +7,8 @@ def cipher(chars: str) -> str:
     a~z以外の場合はそのまま変数resultへ格納する。
 
     def hogehoge(x: type) -> type:
-    ↑これはver3.5から導入された型アノテーション（https://www.python.org/dev/peps/pep-0484/）
+    ↑これはver3.5から導入された型アノテーション
+    （https://www.python.org/dev/peps/pep-0484/）
     """
     result = ''
     for c in chars:

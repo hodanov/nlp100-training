@@ -1,7 +1,7 @@
 import re
 
 
-def get_element_symbols(words):
+def get_element_symbols(words: str) -> {}:
     """
     文章を単語に分解，1, 5, 6, 7, 8, 9, 15, 16, 19番目の単語は先頭の1文字，
     それ以外の単語は先頭の2文字を取り出す。
