@@ -3,14 +3,11 @@ import sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 
-def getOddChar(word):
-    i = 0
-    odd_chars = ''
-    for char in word:
-        i += 1
-        if i % 2 == 1:
-            odd_chars += char
-    return odd_chars
+def getOddChar(word: str):
+    """
+    文字列の奇数番目の文字を取り出して連結する。
+    """
+    return word[::2]
 
 
 word = 'パタトクカシー'

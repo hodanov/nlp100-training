@@ -3,17 +3,17 @@ import sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 
-def join(x, y):
-    joined_word = ''
-    i = 0
+def merge_two_words(x: str, y: str):
+    """
+    与えられた2つの文字列を交互に結合する。
+    """
+    merged_word = ''
     for i in range(4):
-        joined_word += x[i]
-        joined_word += y[i]
-        i += 1
-        print(i)
-    return joined_word
+        merged_word += x[i]
+        merged_word += y[i]
+    return merged_word
 
 
 word1 = 'パトカー'
 word2 = 'タクシー'
-print(join(word1, word2))
+print(merge_two_words(word1, word2))
