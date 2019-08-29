@@ -1,3 +1,9 @@
+"""
+"paraparaparadise"と"paragraph"に含まれる文字bi-gramの集合を，
+それぞれ, XとYとして求め，XとYの和集合，積集合，差集合を求めよ
+"""
+
+
 def n_gram(words, n):
     n_gram = []
     for i in range(len(words) - n + 1):

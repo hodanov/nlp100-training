@@ -1,4 +1,7 @@
 def n_gram(words, n):
+    """
+    与えられたシーケンス（文字列やリストなど）からn-gramを作成
+    """
     n_gram = []
     for i in range(len(words) - n + 1):
         n_gram.append(words[i:i + n])
